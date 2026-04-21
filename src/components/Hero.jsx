@@ -3,7 +3,7 @@ import { ChevronRight, Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-12 md:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -15,19 +15,19 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 text-center text-white mt-16">
-        <div className="inline-block px-6 py-2 border border-accent/20 bg-accent/5 backdrop-blur-md rounded-full mb-8 animate-bounce">
-          <span className="text-accent text-[10px] md:text-xs font-black tracking-[0.4em] uppercase">
+      <div className="container relative z-10 text-center text-white mt-10 md:mt-20">
+        <div className="inline-block px-5 py-1.5 border border-accent/20 bg-accent/5 backdrop-blur-md rounded-full mb-6 md:mb-8 animate-bounce">
+          <span className="text-accent text-[9px] md:text-xs font-black tracking-[0.4em] uppercase">
             WE DELIVER A GOOD SERVICES
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-8xl font-serif max-w-5xl mx-auto mb-8 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif max-w-5xl mx-auto mb-6 md:mb-8 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
           Transform Your Space <br />
           <span className="text-accent italic">With Elegance</span>
         </h1>
         
-        <p className="text-secondary/80 max-w-2xl mx-auto mb-12 text-lg md:text-xl font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
+        <p className="text-secondary/80 max-w-xl mx-auto mb-10 md:mb-12 text-base md:text-xl font-medium leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
           We specialize in premium interior solutions that bring comfort, style and lasting value to your home and business.
         </p>
 
