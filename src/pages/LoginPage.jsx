@@ -7,6 +7,7 @@ import { useUser } from '../context/UserContext';
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const { login } = useUser();
