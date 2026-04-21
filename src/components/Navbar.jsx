@@ -24,7 +24,9 @@ const Navbar = ({ onLogout }) => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-white py-4 shadow-xl' : 'bg-transparent py-6'
+      isScrolled 
+        ? 'bg-white py-4 shadow-xl' 
+        : 'bg-black/10 backdrop-blur-sm py-6 border-b border-white/5'
     }`}>
       <div className="container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3 group">
@@ -46,7 +48,7 @@ const Navbar = ({ onLogout }) => {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}

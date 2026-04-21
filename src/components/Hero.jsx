@@ -15,8 +15,8 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 text-center text-white">
-        <div className="inline-block px-6 py-2 border border-accent/30 bg-accent/10 backdrop-blur-sm rounded-full mb-8 animate-bounce">
+      <div className="container relative z-10 text-center text-white pt-24">
+        <div className="inline-block px-6 py-2 border border-accent/20 bg-accent/5 backdrop-blur-md rounded-full mb-8 animate-bounce">
           <span className="text-accent text-[10px] md:text-xs font-black tracking-[0.4em] uppercase">
             WE DELIVER A GOOD SERVICES
           </span>
