@@ -26,9 +26,9 @@ const Navbar = ({ onLogout }) => {
     <nav className={`fixed w-full z-50 transition-all duration-500 ${
       isScrolled 
         ? 'bg-white py-4 shadow-xl' 
-        : 'bg-black/10 backdrop-blur-sm py-6 border-b border-white/5'
+        : 'bg-black/20 backdrop-blur-md py-6 border-b border-white/5'
     }`}>
-      <div className="container flex justify-between items-center">
+      <div className="container grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr] items-center">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="flex flex-col">
             <div className="flex items-center gap-1">
@@ -48,7 +48,7 @@ const Navbar = ({ onLogout }) => {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center justify-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -73,7 +73,7 @@ const Navbar = ({ onLogout }) => {
         </div>
 
         {/* Icons */}
-        <div className={`hidden md:flex items-center gap-6 ${isScrolled ? 'text-primary' : 'text-white'}`}>
+        <div className={`hidden md:flex items-center justify-end gap-6 ${isScrolled ? 'text-primary' : 'text-white'}`}>
           <Search size={20} className="cursor-pointer hover:text-accent transition-colors" />
           <Link to="/profile" className="flex items-center gap-3 group">
             <div className="flex flex-col items-end">

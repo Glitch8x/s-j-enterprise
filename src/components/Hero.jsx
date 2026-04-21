@@ -3,7 +3,7 @@ import { ChevronRight, Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="relative h-screen w-full flex flex-col items-center justify-start overflow-hidden pt-60 md:pt-64">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 text-center text-white pt-24">
+      <div className="container relative z-10 text-center text-white">
         <div className="inline-block px-6 py-2 border border-accent/20 bg-accent/5 backdrop-blur-md rounded-full mb-8 animate-bounce">
           <span className="text-accent text-[10px] md:text-xs font-black tracking-[0.4em] uppercase">
             WE DELIVER A GOOD SERVICES
