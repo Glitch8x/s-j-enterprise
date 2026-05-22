@@ -56,7 +56,7 @@ const LoginPage = () => {
                 <div className="w-5 h-1 bg-primary"></div>
               </div>
             </div>
-            <p className="text-[10px] font-black tracking-[0.4em] text-primary/40 uppercase">INSTITUTIONAL GATEWAY</p>
+            <p className="text-[10px] font-black tracking-[0.4em] text-primary/40 uppercase">Interior Design</p>
           </div>
 
           <h2 className="text-4xl font-serif text-primary text-center mb-4">Welcome Back</h2>
